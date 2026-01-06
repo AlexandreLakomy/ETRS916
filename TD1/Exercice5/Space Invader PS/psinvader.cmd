@@ -1,0 +1,1 @@
+powershell -command "& {.\psinvaders.ps1}" 
