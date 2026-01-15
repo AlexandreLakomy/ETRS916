@@ -1,0 +1,124 @@
+[2026-01-15 10:38:35] [INFO] ===== DÉMARRAGE DU SCRIPT =====
+[2026-01-15 10:38:35] [INFO] Configuration AD : Domaine=tdtri.fr, Serveur=WIN-50LAD:3268
+[2026-01-15 10:38:35] [INFO] Configuration GitLab : URL=https://192.168.141.217
+[2026-01-15 10:38:36] [INFO] ===== POINT 1 : Récupération des groupes AD =====
+[2026-01-15 10:38:50] [INFO] Nombre de groupes récupérés : 52
+[2026-01-15 10:38:50] [INFO] ===== POINT 2 : Récupération des utilisateurs =====
+[2026-01-15 10:38:54] [INFO] Nombre total d'utilisateurs récupérés : 23
+[2026-01-15 10:38:54] [INFO] ===== POINT 3 : Stockage des utilisateurs avec leurs groupes =====
+[2026-01-15 10:38:54] [INFO] Nouvel utilisateur détecté : cmiron -> Groupes: GG_Logistique
+[2026-01-15 10:38:54] [INFO] Nouvel utilisateur détecté : hlagrande -> Groupes: GG_Logistique
+[2026-01-15 10:38:54] [INFO] Nouvel utilisateur détecté : fpotvin -> Groupes: GG_Logistique
+[2026-01-15 10:38:54] [INFO] Nouvel utilisateur détecté : slapointe -> Groupes: GG_Logistique
+[2026-01-15 10:38:54] [INFO] Nouvel utilisateur détecté : fcousteau -> Groupes: GG_Logistique
+[2026-01-15 10:38:54] [INFO] Nouvel utilisateur détecté : sguay -> Groupes: GG_Leads, GG_Logistique
+[2026-01-15 10:38:54] [INFO] Nouvel utilisateur détecté : cgrimard -> Groupes: GG_Finance
+[2026-01-15 10:38:54] [INFO] Nouvel utilisateur détecté : schasse -> Groupes: GG_Finance
+[2026-01-15 10:38:54] [INFO] Nouvel utilisateur détecté : raube -> Groupes: GG_Finance
+[2026-01-15 10:38:54] [INFO] Nouvel utilisateur détecté : vsaindon -> Groupes: GG_Finance
+[2026-01-15 10:38:54] [INFO] Nouvel utilisateur détecté : lbertrand -> Groupes: GG_Finance
+[2026-01-15 10:38:54] [INFO] Nouvel utilisateur détecté : rbeaucham -> Groupes: GG_Leads, GG_Finance
+[2026-01-15 10:38:54] [INFO] Nouvel utilisateur détecté : flacombe -> Groupes: GG_RH
+[2026-01-15 10:38:54] [INFO] Nouvel utilisateur détecté : mpaquin -> Groupes: GG_RH
+[2026-01-15 10:38:54] [INFO] Nouvel utilisateur détecté : pgrivois -> Groupes: GG_RH
+[2026-01-15 10:38:54] [INFO] Nouvel utilisateur détecté : lpoulin -> Groupes: GG_RH
+[2026-01-15 10:38:54] [INFO] Nouvel utilisateur détecté : ahachee -> Groupes: GG_Leads, GG_RH
+[2026-01-15 10:38:54] [INFO] Résumé : 4 groupe(s) avec utilisateurs, 17 utilisateur(s) au total
+[2026-01-15 10:38:54] [INFO] Nombre total d'utilisateurs uniques : 17
+[2026-01-15 10:38:54] [INFO] ===== PARTIE GITLAB : Synchronisation des droits =====
+[2026-01-15 10:38:54] [INFO] ===== GITLAB - Étape 1 : Liste des projets =====
+[2026-01-15 10:38:54] [INFO] Récupération de la liste des projets GitLab...
+[2026-01-15 10:38:54] [INFO]   Page 1 : 6 projet(s) récupéré(s)
+[2026-01-15 10:38:54] [INFO] Total : 6 projet(s) GitLab récupéré(s)
+[2026-01-15 10:38:54] [INFO] Projet trouvé : [6] finance/monay
+[2026-01-15 10:38:54] [INFO] Projet trouvé : [5] rh/markpeople
+[2026-01-15 10:38:54] [INFO] Projet trouvé : [4] rh/holiday
+[2026-01-15 10:38:54] [INFO] Projet trouvé : [3] logistique/delivraison
+[2026-01-15 10:38:54] [INFO] Projet trouvé : [2] logistique/cartons
+[2026-01-15 10:38:54] [INFO] Projet trouvé : [1] logistique/tgr
+[2026-01-15 10:38:54] [INFO] Projets par département :
+[2026-01-15 10:38:54] [INFO]   Logistique : 3 projet(s)
+[2026-01-15 10:38:54] [INFO]   Finance : 1 projet(s)
+[2026-01-15 10:38:54] [INFO]   RH : 2 projet(s)
+[2026-01-15 10:38:54] [INFO] ===== GITLAB - Étape 2-3-4 : Synchronisation des droits =====
+[2026-01-15 10:38:54] [INFO] ---
+[2026-01-15 10:38:54] [INFO] Traitement du projet : [6] Monay (namespace: Finance)
+[2026-01-15 10:38:54] [INFO]   Département détecté : Finance
+[2026-01-15 10:38:55] [INFO]   Membres actuels : 9
+[2026-01-15 10:38:55] [INFO]   Accès attendus : 8 utilisateur(s)
+[2026-01-15 10:38:55] [INFO]   'cgrimard' a déjà le bon niveau d'accès (30)
+[2026-01-15 10:38:55] [INFO]   'raube' a déjà le bon niveau d'accès (30)
+[2026-01-15 10:38:55] [INFO]   'lbertrand' a déjà le bon niveau d'accès (30)
+[2026-01-15 10:38:55] [INFO]   'ahachee' a déjà le bon niveau d'accès (20)
+[2026-01-15 10:38:55] [INFO]   'rbeaucham' a déjà le bon niveau d'accès (40)
+[2026-01-15 10:38:55] [INFO]   'schasse' a déjà le bon niveau d'accès (30)
+[2026-01-15 10:38:55] [INFO]   'sguay' a déjà le bon niveau d'accès (20)
+[2026-01-15 10:38:55] [INFO]   'vsaindon' a déjà le bon niveau d'accès (30)
+[2026-01-15 10:38:55] [INFO] ---
+[2026-01-15 10:38:55] [INFO] Traitement du projet : [5] MarkPeople (namespace: RH)
+[2026-01-15 10:38:55] [INFO]   Département détecté : RH
+[2026-01-15 10:38:55] [INFO]   Membres actuels : 8
+[2026-01-15 10:38:55] [INFO]   Accès attendus : 7 utilisateur(s)
+[2026-01-15 10:38:55] [INFO]   'pgrivois' a déjà le bon niveau d'accès (30)
+[2026-01-15 10:38:55] [INFO]   'flacombe' a déjà le bon niveau d'accès (30)
+[2026-01-15 10:38:55] [INFO]   'mpaquin' a déjà le bon niveau d'accès (30)
+[2026-01-15 10:38:55] [INFO]   'lpoulin' a déjà le bon niveau d'accès (30)
+[2026-01-15 10:38:55] [INFO]   'rbeaucham' a déjà le bon niveau d'accès (20)
+[2026-01-15 10:38:55] [INFO]   'ahachee' a déjà le bon niveau d'accès (40)
+[2026-01-15 10:38:55] [INFO]   'sguay' a déjà le bon niveau d'accès (20)
+[2026-01-15 10:38:55] [INFO] ---
+[2026-01-15 10:38:55] [INFO] Traitement du projet : [4] Holiday (namespace: RH)
+[2026-01-15 10:38:55] [INFO]   Département détecté : RH
+[2026-01-15 10:38:55] [INFO]   Membres actuels : 8
+[2026-01-15 10:38:55] [INFO]   Accès attendus : 7 utilisateur(s)
+[2026-01-15 10:38:55] [INFO]   'pgrivois' a déjà le bon niveau d'accès (30)
+[2026-01-15 10:38:55] [INFO]   'flacombe' a déjà le bon niveau d'accès (30)
+[2026-01-15 10:38:55] [INFO]   'mpaquin' a déjà le bon niveau d'accès (30)
+[2026-01-15 10:38:55] [INFO]   'lpoulin' a déjà le bon niveau d'accès (30)
+[2026-01-15 10:38:55] [INFO]   'rbeaucham' a déjà le bon niveau d'accès (20)
+[2026-01-15 10:38:55] [INFO]   'ahachee' a déjà le bon niveau d'accès (40)
+[2026-01-15 10:38:55] [INFO]   'sguay' a déjà le bon niveau d'accès (20)
+[2026-01-15 10:38:55] [INFO] ---
+[2026-01-15 10:38:55] [INFO] Traitement du projet : [3] delivraison  (namespace: Logistique )
+[2026-01-15 10:38:55] [INFO]   Département détecté : Logistique
+[2026-01-15 10:38:55] [INFO]   Membres actuels : 8
+[2026-01-15 10:38:55] [INFO]   Accès attendus : 8 utilisateur(s)
+[2026-01-15 10:38:55] [INFO]   Ajout nécessaire pour 'slapointe' (access_level=30)
+[2026-01-15 10:38:55] [WARNING]   User 'slapointe' n'existe pas dans GitLab
+[2026-01-15 10:38:55] [INFO]   'cmiron' a déjà le bon niveau d'accès (30)
+[2026-01-15 10:38:55] [INFO]   'hlagrande' a déjà le bon niveau d'accès (30)
+[2026-01-15 10:38:55] [INFO]   'fcousteau' a déjà le bon niveau d'accès (30)
+[2026-01-15 10:38:55] [INFO]   'ahachee' a déjà le bon niveau d'accès (20)
+[2026-01-15 10:38:55] [INFO]   'rbeaucham' a déjà le bon niveau d'accès (20)
+[2026-01-15 10:38:55] [INFO]   'sguay' a déjà le bon niveau d'accès (40)
+[2026-01-15 10:38:55] [INFO]   'fpotvin' a déjà le bon niveau d'accès (30)
+[2026-01-15 10:38:55] [INFO] ---
+[2026-01-15 10:38:55] [INFO] Traitement du projet : [2] cartons (namespace: Logistique )
+[2026-01-15 10:38:55] [INFO]   Département détecté : Logistique
+[2026-01-15 10:38:55] [INFO]   Membres actuels : 8
+[2026-01-15 10:38:55] [INFO]   Accès attendus : 8 utilisateur(s)
+[2026-01-15 10:38:55] [INFO]   Ajout nécessaire pour 'slapointe' (access_level=30)
+[2026-01-15 10:38:55] [WARNING]   User 'slapointe' n'existe pas dans GitLab
+[2026-01-15 10:38:55] [INFO]   'cmiron' a déjà le bon niveau d'accès (30)
+[2026-01-15 10:38:55] [INFO]   'hlagrande' a déjà le bon niveau d'accès (30)
+[2026-01-15 10:38:55] [INFO]   'fcousteau' a déjà le bon niveau d'accès (30)
+[2026-01-15 10:38:55] [INFO]   'ahachee' a déjà le bon niveau d'accès (20)
+[2026-01-15 10:38:55] [INFO]   'rbeaucham' a déjà le bon niveau d'accès (20)
+[2026-01-15 10:38:55] [INFO]   'sguay' a déjà le bon niveau d'accès (40)
+[2026-01-15 10:38:55] [INFO]   'fpotvin' a déjà le bon niveau d'accès (30)
+[2026-01-15 10:38:55] [INFO] ---
+[2026-01-15 10:38:55] [INFO] Traitement du projet : [1] TGR (namespace: Logistique )
+[2026-01-15 10:38:55] [INFO]   Département détecté : Logistique
+[2026-01-15 10:38:55] [INFO]   Membres actuels : 8
+[2026-01-15 10:38:55] [INFO]   Accès attendus : 8 utilisateur(s)
+[2026-01-15 10:38:55] [INFO]   Ajout nécessaire pour 'slapointe' (access_level=30)
+[2026-01-15 10:38:55] [WARNING]   User 'slapointe' n'existe pas dans GitLab
+[2026-01-15 10:38:55] [INFO]   'cmiron' a déjà le bon niveau d'accès (30)
+[2026-01-15 10:38:55] [INFO]   'hlagrande' a déjà le bon niveau d'accès (30)
+[2026-01-15 10:38:55] [INFO]   'fcousteau' a déjà le bon niveau d'accès (30)
+[2026-01-15 10:38:55] [INFO]   'ahachee' a déjà le bon niveau d'accès (20)
+[2026-01-15 10:38:55] [INFO]   'rbeaucham' a déjà le bon niveau d'accès (20)
+[2026-01-15 10:38:55] [INFO]   'sguay' a déjà le bon niveau d'accès (40)
+[2026-01-15 10:38:55] [INFO]   'fpotvin' a déjà le bon niveau d'accès (30)
+[2026-01-15 10:38:55] [INFO] ===== FIN DU SCRIPT =====
+[2026-01-15 10:38:55] [INFO] Log sauvegardé dans : C:\Users\user\ETRS916\TP\AD_Sync_20260115_103835.log
